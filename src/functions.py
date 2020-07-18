@@ -34,7 +34,7 @@ def time_list(wallNum): #this function creates the times at which the wallpapers
     global timeList=[]
     print ("please input the times at which the wallpapers must be changed in the format: 2230 --> 22:30\n"
     for i in range(wallNum):
-        timeList[i]=input("enter the time: "+str(i))
+        timeList[i]=int(input("enter the time: "+str(i)))
     print("all set!")    
 
     # for i in range(wallNum):
