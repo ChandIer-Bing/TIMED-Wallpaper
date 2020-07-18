@@ -92,4 +92,5 @@ while True:
 wallpapers=os.listdir('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur')
 print(wallpapers)
 #print(len(wallpapers),type(len(wallpapers)))
-len
+
+
