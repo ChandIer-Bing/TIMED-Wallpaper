@@ -4,6 +4,7 @@ import time
 import msvcrt
 import ctypes
 import random
+import os
 
 currentWall=int(1)
 #<<<<-GOOFS->>>>
@@ -61,7 +62,7 @@ print(RNG(A,B))
  """
 
 ##<<<<-TIMED RNG WALLPAPER CHANGE->>>>
-def changeWall(message,wallIndex): #wallindex: index of the wallpaper that is going to be shown
+""" def changeWall(message,wallIndex): #wallindex: index of the wallpaper that is going to be shown
         wallIndex=str(wallIndex)
         wallpaperSource="D:\CODE\PYTHON\WALLPAPER_change\Big_Sur\macOS-Big-Sur-Daylight-Wallpaper-"+wallIndex+".jpg"
         ctypes.windll.user32.SystemParametersInfoW(20, 0, wallpaperSource, 0)
@@ -81,3 +82,14 @@ while True:
         schedule.run_pending()
         time.sleep(1)
 
+ """
+ #<<<<-FOLDERS TESTING ->>>>
+
+#print(os.path.isabs('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur'))
+#print(os.path.isdir('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur'))
+#print(os.path.isfile('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur'))
+#print(os.listdir('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur'))
+wallpapers=os.listdir('C:\\Users\\raton\\Pictures\\WIDE wallpapers\\Big_Sur')
+print(wallpapers)
+#print(len(wallpapers),type(len(wallpapers)))
+len
