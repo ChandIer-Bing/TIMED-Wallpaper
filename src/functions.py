@@ -22,7 +22,9 @@ def time_Dict(wallNum): #wallNum : number of wallpapers
     for i in range(wallNum)
         timeDict.setdefault("w"+str(wallNum),1)
 
-        
+    
+
+
 
 
 
